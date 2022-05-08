@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <button id="btn" onclick="too()">too</button>
+        <button id="btn" onclick="hurd()">hurd</button>
+        <button id="btn" onclick="dun()">dun</button>
+    </div>
+</body>
+
+<script>
+    i = 0;
+    function too (){
+        while (i<=20){
+            if(i % 2 === 0){
+                document.write(i + " нь тэгш тоо")
+                document.write('<br/>')
+            }else{
+                document.write(i + " нь сондгой тоо")
+                document.write('<br/>')
+            }
+            i++
+        }
+    }
+</script>
+<script>
+    let i = 1;
+    let j = 1;
+    function hurd (){
+        while(i < 10){
+            while(j < 10){
+                document.write(j + "*" + i + "=" + i * j)
+                document.write('<br/>')
+                j++
+            }
+            if(i<=9){
+                document.write('<br/>')
+            }
+            j=1
+            i++
+        }
+    }
+</script>
+<script>
+    i = 0;
+    function dun (){
+        while (i<=100){
+            if(i <= 100 && i >90){
+                document.write(i + "% нь A")
+                document.write('<br/>')
+            }
+            if(i <= 90 && i >80){
+                document.write(i + "% нь B")
+                document.write('<br/>')
+            }
+            if(i <= 80 && i >70){
+                document.write(i + "% нь C")
+                document.write('<br/>')
+            }
+            if(i <= 70 && i >66){
+                document.write(i + "% нь D")
+                document.write('<br/>')
+            }
+            if(i <= 66 && i >=0){
+                document.write(i + "% нь F")
+                document.write('<br/>')
+            }
+            i++
+        }
+    }
+</script>
+</html>

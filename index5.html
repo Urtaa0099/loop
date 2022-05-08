@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    a=Number(prompt('a тоо'))
+    b=Number(prompt('b тоо'))
+    c=Number(prompt('c тоо'))
+    d=Number(prompt('d тоо'))
+    //a
+    alert(a+b+c+d)
+    //b
+    console.log(a,b,c,d)
+    //c
+    let arr = [ a,b,c,d];
+    let max = arr[0]; 
+    for( let i = 1; i < arr.length ; i++ ) {
+        if( arr[i] > max ) {
+            max = arr[i];
+        }
+    }
+    console.log(max)
+
+    let arra = [ a,b,c,d];
+    let min = arra[0];
+    for ( let j = 1; j < arra.length ; j++) {
+        if (arra[j] < min) {
+            min=arra[j]
+        }
+    }
+    console.log(min)
+    //d
+    alert((a+b+c+d)/4)
+</script>
+</html>
